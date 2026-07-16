@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mohamed Ajmal | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:white;
+overflow-x:hidden;
+}
+
+section{
+padding:100px 10%;
+}
+
+h2.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#00bfff;
+}
+
+/* Navigation */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#161b22;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00bfff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:35px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00bfff;
+}
+
+.menu{
+display:none;
+font-size:30px;
+cursor:pointer;
+}
+
+/* Home */
+
+.home{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+min-height:100vh;
+
+background:linear-gradient(135deg,#0d1117,#161b22,#1f2937);
+
+}
+
+.home-text{
+
+flex:1;
+
+}
+
+.home-text h3{
+
+font-size:28px;
+
+}
+
+.home-text h1{
+
+font-size:65px;
+
+margin:10px 0;
+
+color:#00bfff;
+
+}
+
+.home-text h2{
+
+font-size:35px;
+
+margin-bottom:20px;
+
+}
+
+.home-text p{
+
+font-size:18px;
+
+line-height:1.8;
+
+max-width:650px;
+
+color:#d6d6d6;
+
+}
+
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+padding:15px 28px;
+
+background:#00bfff;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:30px;
+
+transition:.4s;
+
+font-weight:600;
+
+}
+
+.buttons a:hover{
+
+background:#008cff;
+
+transform:translateY(-5px);
+
+}
+
+.home-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.home-image img{
+
+width:350px;
+
+height:350px;
+
+border-radius:50%;
+
+border:8px solid #00bfff;
+
+object-fit:cover;
+
+box-shadow:0 0 40px #00bfff;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+
+}
+
+/* About */
+
+.about-container{
+
+display:flex;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about-left img{
+
+width:320px;
+
+border-radius:20px;
+
+}
+
+.about-right{
+
+flex:1;
+
+}
+
+.about-right p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#d5d5d5;
+
+margin-bottom:30px;
+
+}
+
+.info{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.info div{
+
+background:#161b22;
+
+padding:20px;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.info div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 15px #00bfff;
+
+}
+
+.info h3{
+
+color:#00bfff;
+
+margin-bottom:10px;
+
+}
+
+/* Skills */
+
+.skills{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.skill{
+
+background:#161b22;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.skill:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 20px #00bfff;
+
+}
+
+.skill i{
+
+font-size:45px;
+
+color:#00bfff;
+
+margin-bottom:20px;
+
+}
+
+.skill h3{
+
+margin-bottom:15px;
+
+}
+
+/* ===========================
+PROJECTS
+=========================== */
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#161b22;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00bfff;
+}
+
+.project-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.project-card h3{
+color:#00bfff;
+margin-bottom:15px;
+}
+
+.project-card p{
+color:#d6d6d6;
+line-height:1.8;
+}
+
+/* ===========================
+TIMELINE
+=========================== */
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.timeline-item{
+background:#161b22;
+padding:30px;
+border-left:5px solid #00bfff;
+border-radius:10px;
+transition:.4s;
+}
+
+.timeline-item:hover{
+transform:translateX(10px);
+}
+
+.timeline-item h3{
+color:#00bfff;
+margin-bottom:10px;
+}
+
+.timeline-item span{
+color:#999;
+display:block;
+margin-bottom:15px;
+}
+
+/* ===========================
+EDUCATION
+=========================== */
+
+.education-card{
+background:#161b22;
+padding:40px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+text-align:center;
+transition:.4s;
+}
+
+.education-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00bfff;
+}
+
+.education-card h3{
+color:#00bfff;
+margin-bottom:20px;
+}
+
+.education-card p{
+margin:10px 0;
+color:#d6d6d6;
+}
+
+/* ===========================
+CERTIFICATES
+=========================== */
+
+.certificate-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.certificate-card{
+background:#161b22;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.certificate-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00bfff;
+}
+
+.certificate-card h3{
+color:#00bfff;
+margin-bottom:15px;
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.contact-card{
+background:#161b22;
+padding:35px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00bfff;
+}
+
+.contact-card i{
+font-size:45px;
+color:#00bfff;
+margin-bottom:20px;
+}
+
+.contact-card h3{
+margin-bottom:10px;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+background:#161b22;
+padding:40px;
+text-align:center;
+}
+
+footer h2{
+color:#00bfff;
+margin-bottom:10px;
+}
+
+footer p{
+color:#ccc;
+margin:10px 0;
+}
+
+.social{
+margin:25px 0;
+}
+
+.social a{
+display:inline-block;
+width:50px;
+height:50px;
+line-height:50px;
+background:#00bfff;
+color:white;
+border-radius:50%;
+margin:0 10px;
+transition:.4s;
+}
+
+.social a:hover{
+transform:rotate(360deg);
+background:#008cff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#00bfff;
+border-radius:20px;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.home,
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.home-image img{
+width:280px;
+height:280px;
+}
+
+.info{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+.menu{
+display:block;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+AJMAL
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="home">
+
+<div class="home-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Mohamed Ajmal</h1>
+
+<h2>
+
+<span class="typing"></span>
+
+</h2>
+
+<p>
+
+Electronics and Communication Engineering student at
+Nandha Engineering College.
+
+Passionate about Embedded Systems,
+IoT,
+Java Programming,
+and Problem Solving.
+
+I enjoy developing real-world engineering projects and continuously improving my programming skills.
+
+</p>
+
+<div class="buttons">
+
+<a href="M_AJMAL_coreFINAL.pdf" download>
+
+<i class="fas fa-download"></i>
+
+Download Resume
+
+</a>
+
+<a href="https://github.com/thagzeen06" target="_blank">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+<a href="https://leetcode.com/u/ajmal_0306/" target="_blank">
+
+<i class="fas fa-code"></i>
+
+LeetCode
+
+</a>
+
+<a href="https://www.linkedin.com/in/mohamed-ajmal-a718232a3" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+<div class="home-image">
+
+<img src="ajmal.jpeg" alt="Mohamed Ajmal">
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="title">
+
+About Me
+
+</h2>
+
+<div class="about-container">
+
+<div class="about-left">
+
+<img src="ajmal.jpg">
+
+</div>
+
+<div class="about-right">
+
+<p>
+
+I am Mohamed Ajmal Thagzeen M,
+currently pursuing B.E Electronics and Communication Engineering at
+Nandha Engineering College.
+
+My areas of interest include
+
+Embedded Systems,
+
+Internet of Things,
+
+Java Programming,
+
+PCB Design,
+
+and Automation.
+
+I enjoy learning new technologies and developing practical projects that solve real-world problems.
+
+</p>
+
+<div class="info">
+
+<div>
+
+<h3>College</h3>
+
+<p>Nandha Engineering College</p>
+
+</div>
+
+<div>
+
+<h3>Degree</h3>
+
+<p>B.E Electronics and Communication Engineering</p>
+
+</div>
+
+<div>
+
+<h3>CGPA</h3>
+
+<p>8.7</p>
+
+</div>
+
+<div>
+
+<h3>Location</h3>
+
+<p>Erode, Tamil Nadu</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2 class="title">
+
+Technical Skills
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<i class="fab fa-java"></i>
+
+<h3>Java</h3>
+
+<p>
+
+Intermediate Java,
+Collections,
+OOP,
+Problem Solving
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-code"></i>
+
+<h3>C Programming</h3>
+
+<p>
+
+Basic Programming,
+Logic Building
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-microchip"></i>
+
+<h3>Embedded Systems</h3>
+
+<p>
+
+Arduino,
+STM32,
+ESP32
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-wifi"></i>
+
+<h3>Internet of Things</h3>
+
+<p>
+
+Sensor Integration,
+Automation,
+Cloud Monitoring
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-laptop-code"></i>
+
+<h3>Tools</h3>
+
+<p>
+
+Arduino IDE
+
+STM32CubeIDE
+
+Git & GitHub
+
+</p>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-brain"></i>
+
+<h3>Problem Solving</h3>
+
+<p>
+
+LeetCode
+
+DSA
+
+Logical Thinking
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+<section>
+
+<h2 class="title">
+
+My Achievements
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<h1 style="color:#00bfff;">8.7</h1>
+
+<p>CGPA</p>
+
+</div>
+
+<div class="skill">
+
+<h1 style="color:#00bfff;">2</h1>
+
+<p>Internships</p>
+
+</div>
+
+<div class="skill">
+
+<h1 style="color:#00bfff;">5+</h1>
+
+<p>Projects</p>
+
+</div>
+
+<div class="skill">
+
+<h1 style="color:#00bfff;">100+</h1>
+
+<p>LeetCode Problems</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>🚑 Emergency Vehicle Automatic Path Maker</h3>
+
+<p>
+
+Designed an Arduino-based intelligent traffic system
+to automatically create a clear path for emergency
+vehicles using RF/GSM communication and sensors.
+
+</p>
+
+<a href="https://github.com/thagzeen06" target="_blank" class="resume-btn">
+
+View Project
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>⚡ Automated PCB Etching Machine</h3>
+
+<p>
+
+Developed an automated PCB etching machine
+to reduce manual chemical handling and improve
+small-scale PCB fabrication.
+
+</p>
+
+<a href="https://github.com/thagzeen06" target="_blank" class="resume-btn">
+
+View Project
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>🌐 IoT Based Embedded Projects</h3>
+
+<p>
+
+Worked on IoT prototypes using Arduino,
+ESP32 and STM32 with different sensors,
+automation and cloud monitoring.
+
+</p>
+
+<a href="https://github.com/thagzeen06" target="_blank" class="resume-btn">
+
+View Project
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= INTERNSHIP ================= -->
+
+<section id="internship">
+
+<h2 class="title">
+
+Internships
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>
+
+Zeekers Technology Solutions Pvt. Ltd.
+
+</h3>
+
+<span>
+
+June 2025 – July 2025
+
+</span>
+
+<p>
+
+Worked on IoT prototypes,
+sensor interfacing,
+Arduino programming,
+debugging and testing embedded hardware.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>
+
+Chip Crafts Pvt. Ltd.
+
+</h3>
+
+<span>
+
+December 2025 – January 2026
+
+</span>
+
+<p>
+
+Worked with Embedded Systems,
+Microcontrollers,
+Sensor Interfacing,
+IoT development and hardware testing.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<h2 class="title">
+
+Education
+
+</h2>
+
+<div class="education-card">
+
+<h3>
+
+Bachelor of Engineering
+
+</h3>
+
+<p>
+
+Electronics and Communication Engineering
+
+</p>
+
+<p>
+
+Nandha Engineering College
+
+</p>
+
+<p>
+
+2023 - 2027
+
+</p>
+
+<h3>
+
+CGPA : 8.7
+
+</h3>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certificate">
+
+<h2 class="title">
+
+Certifications
+
+</h2>
+
+<div class="certificate-container">
+
+<div class="certificate-card">
+
+<h3>
+
+NPTEL
+
+</h3>
+
+<p>
+
+Introduction to Internet of Things
+
+</p>
+
+</div>
+
+<div class="certificate-card">
+
+<h3>
+
+NPTEL
+
+</h3>
+
+<p>
+
+Cloud Computing
+
+</p>
+
+</div>
+
+<div class="certificate-card">
+
+<h3>
+
+Workshop
+
+</h3>
+
+<p>
+
+Embedded Systems and IoT
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= CODING PROFILES ================= -->
+
+<section>
+
+<h2 class="title">
+
+Coding Profiles
+
+</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<i class="fab fa-github"></i>
+
+<h3>GitHub</h3>
+
+<p>
+
+thagzeen06
+
+</p>
+
+<a href="https://github.com/thagzeen06"
+
+target="_blank"
+
+class="resume-btn">
+
+Visit
+
+</a>
+
+</div>
+
+<div class="skill">
+
+<i class="fas fa-code"></i>
+
+<h3>LeetCode</h3>
+
+<p>
+
+ajmal_0306
+
+</p>
+
+<a href="https://leetcode.com/u/ajmal_0306/"
+
+target="_blank"
+
+class="resume-btn">
+
+Visit
+
+</a>
+
+</div>
+
+<div class="skill">
+
+<i class="fab fa-linkedin"></i>
+
+<h3>LinkedIn</h3>
+
+<p>
+
+Mohamed Ajmal
+
+</p>
+
+<a href="https://www.linkedin.com/in/mohamed-ajmal-a718232a3"
+
+target="_blank"
+
+class="resume-btn">
+
+Visit
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="title">
+
+Contact Me
+
+</h2>
+
+<div class="contact-container">
+
+<div class="contact-card">
+
+<i class="fas fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>
+
+mohamedajmal32006@gmail.com
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fas fa-phone"></i>
+
+<h3>Phone</h3>
+
+<p>
+
++91 6382316136
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fas fa-location-dot"></i>
+
+<h3>Location</h3>
+
+<p>
+
+Erode, Tamil Nadu, India
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>Mohamed Ajmal</h2>
+
+<p>
+
+Embedded Systems | Java Developer | IoT Enthusiast
+
+</p>
+
+<div class="social">
+
+<a href="https://github.com/thagzeen06" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/mohamed-ajmal-a718232a3" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="https://leetcode.com/u/ajmal_0306/" target="_blank">
+
+<i class="fas fa-code"></i>
+
+</a>
+
+</div>
+
+<p>
+
+Visitor Count :
+<span id="visitor-count">0</span>
+
+</p>
+
+<p>
+
+© 2026 Mohamed Ajmal. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+// ================= Typing Animation =================
+
+const words=[
+"Embedded Systems Engineer",
+"Java Developer",
+"IoT Enthusiast",
+"Problem Solver",
+"ECE Student"
+];
+
+let i=0;
+let j=0;
+let deleting=false;
+
+const typing=document.querySelector(".typing");
+
+function type(){
+
+if(!typing) return;
+
+let current=words[i];
+
+if(!deleting){
+
+typing.textContent=current.substring(0,j++);
+
+if(j>current.length){
+
+deleting=true;
+
+setTimeout(type,1500);
+
+return;
+
+}
+
+}
+
+else{
+
+typing.textContent=current.substring(0,j--);
+
+if(j<0){
+
+deleting=false;
+
+i++;
+
+if(i==words.length) i=0;
+
+}
+
+}
+
+setTimeout(type,deleting?70:120);
+
+}
+
+type();
+
+
+// ================= Visitor Counter =================
+
+let count=localStorage.getItem("visitor");
+
+if(count==null){
+
+count=1;
+
+}
+
+else{
+
+count=parseInt(count)+1;
+
+}
+
+localStorage.setItem("visitor",count);
+
+document.getElementById("visitor-count").innerHTML=count;
+
+
+// ================= Mobile Menu =================
+
+const menu=document.querySelector(".menu");
+
+const nav=document.querySelector("nav ul");
+
+menu.onclick=function(){
+
+if(nav.style.display=="flex"){
+
+nav.style.display="none";
+
+}
+
+else{
+
+nav.style.display="flex";
+
+nav.style.flexDirection="column";
+
+nav.style.position="absolute";
+
+nav.style.right="20px";
+
+nav.style.top="70px";
+
+nav.style.background="#161b22";
+
+nav.style.padding="20px";
+
+nav.style.borderRadius="10px";
+
+}
+
+};
+
+
+// ================= Active Menu =================
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const top=section.offsetTop-150;
+
+if(scrollY>=top){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.style.color="white";
+
+if(link.getAttribute("href")=="#"+current){
+
+link.style.color="#00bfff";
+
+}
+
+});
+
+});
+
+
+// ================= Scroll To Top =================
+
+const topBtn=document.createElement("button");
+
+topBtn.innerHTML="⬆";
+
+topBtn.style.position="fixed";
+
+topBtn.style.bottom="20px";
+
+topBtn.style.right="20px";
+
+topBtn.style.width="50px";
+
+topBtn.style.height="50px";
+
+topBtn.style.border="none";
+
+topBtn.style.borderRadius="50%";
+
+topBtn.style.background="#00bfff";
+
+topBtn.style.color="white";
+
+topBtn.style.fontSize="22px";
+
+topBtn.style.cursor="pointer";
+
+topBtn.style.display="none";
+
+topBtn.style.boxShadow="0 0 20px #00bfff";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="block";
+
+}
+
+else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+// ================= Fade Animation =================
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(sec=>{
+
+sec.style.opacity="0";
+
+sec.style.transform="translateY(80px)";
+
+sec.style.transition="1s";
+
+observer.observe(sec);
+
+});
+
+console.log("Portfolio Loaded Successfully");
+
+</script>
+
+</body>
+
+</html>
+
